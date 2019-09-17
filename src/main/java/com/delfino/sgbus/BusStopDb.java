@@ -5,7 +5,7 @@ import com.delfino.sgbus.graphdb.Node;
 import com.delfino.sgbus.model.BusStop;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.appengine.repackaged.com.google.common.base.Pair;
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -111,8 +111,8 @@ public class BusStopDb {
         currentBs.lng = lng;
         return getBusStopMap().values().stream().filter(b -> nearby(b, currentBs))
                 .map(b -> Pair.of(b, getHypotenuse(currentBs, b)))
-                .sorted((p1, p2) -> p1.second.compareTo(p2.second))
-                .map(p1 -> p1.first)
+                .sorted((p1, p2) -> p1.getRight().compareTo(p2.getRight()))
+                .map(p1 -> p1.getLeft())
                 .collect(Collectors.toList());
     }
 }
