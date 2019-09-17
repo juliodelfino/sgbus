@@ -8,7 +8,6 @@
 
     <groupId>com.delfino</groupId>
     <artifactId>sgbus</artifactId>
-    <version>1.0.1</version>
 
     <!-- Parent POM defines common plugins and properties. -->
     <parent>
