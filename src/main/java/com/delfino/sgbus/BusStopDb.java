@@ -104,7 +104,7 @@ public class BusStopDb {
                 && hyp < RADIUS;
     }
 
-    public List<Integer> getNearbyBusStops(double lat, double lng) throws IOException {
+    public List<BusStop> getNearbyBusStops(double lat, double lng) throws IOException {
 
         BusStop currentBs = new BusStop();
         currentBs.lat = lat;
@@ -112,7 +112,7 @@ public class BusStopDb {
         return getBusStopMap().values().stream().filter(b -> nearby(b, currentBs))
                 .map(b -> Pair.of(b, getHypotenuse(currentBs, b)))
                 .sorted((p1, p2) -> p1.second.compareTo(p2.second))
-                .map(p1 -> p1.first.id)
+                .map(p1 -> p1.first)
                 .collect(Collectors.toList());
     }
 }

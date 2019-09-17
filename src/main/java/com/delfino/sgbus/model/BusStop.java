@@ -6,7 +6,6 @@ import java.util.Objects;
 
 public class BusStop {
 
-    @JsonIgnore
     public int id;
 
     public double lat;

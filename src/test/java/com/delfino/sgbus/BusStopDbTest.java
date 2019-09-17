@@ -1,5 +1,6 @@
 package com.delfino.sgbus;
 
+import com.delfino.sgbus.model.BusStop;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -20,7 +21,7 @@ public class BusStopDbTest {
 
         BusStopDb db = new BusStopDb();
         db.initializeDb();
-        List<Integer> stops = db.getNearbyBusStops(1.277046,103.809943);
+        List<BusStop> stops = db.getNearbyBusStops(1.277046,103.809943);
         System.out.println(stops);
     }
 
