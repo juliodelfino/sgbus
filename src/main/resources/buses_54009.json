@@ -1,0 +1,644 @@
+{
+  "services": [
+    {
+      "no": "130A",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:23:00+08:00",
+        "duration_ms": 433610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:37:00+08:00",
+        "duration_ms": 1273610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:37:00+08:00",
+        "duration_ms": 1273610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:51:00+08:00",
+        "duration_ms": 2113610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      }
+    },
+    {
+      "no": "135",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:23:00+08:00",
+        "duration_ms": 433610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:37:00+08:00",
+        "duration_ms": 1273610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:37:00+08:00",
+        "duration_ms": 1273610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "",
+        "duration_ms": null,
+        "lat": null,
+        "lng": null,
+        "load": "",
+        "feature": "",
+        "type": ""
+      }
+    },
+    {
+      "no": "135A",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:48:00+08:00",
+        "duration_ms": 1933610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "",
+        "duration_ms": null,
+        "lat": null,
+        "lng": null,
+        "load": "",
+        "feature": "",
+        "type": ""
+      },
+      "next2": {
+        "time": "",
+        "duration_ms": null,
+        "lat": null,
+        "lng": null,
+        "load": "",
+        "feature": "",
+        "type": ""
+      },
+      "next3": {
+        "time": "",
+        "duration_ms": null,
+        "lat": null,
+        "lng": null,
+        "load": "",
+        "feature": "",
+        "type": ""
+      }
+    },
+    {
+      "no": "136",
+      "operator": "GAS",
+      "next": {
+        "time": "2019-09-19T22:18:00+08:00",
+        "duration_ms": 133610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:36:00+08:00",
+        "duration_ms": 1213610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:36:00+08:00",
+        "duration_ms": 1213610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:54:00+08:00",
+        "duration_ms": 2293610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "138",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:22:00+08:00",
+        "duration_ms": 373610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:33:00+08:00",
+        "duration_ms": 1033610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:33:00+08:00",
+        "duration_ms": 1033610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:43:00+08:00",
+        "duration_ms": 1633610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "169",
+      "operator": "SMRT",
+      "next": {
+        "time": "2019-09-19T22:16:00+08:00",
+        "duration_ms": 13610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:26:00+08:00",
+        "duration_ms": 613610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:26:00+08:00",
+        "duration_ms": 613610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:36:00+08:00",
+        "duration_ms": 1213610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      }
+    },
+    {
+      "no": "22",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:22:00+08:00",
+        "duration_ms": 373610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:36:00+08:00",
+        "duration_ms": 1213610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:36:00+08:00",
+        "duration_ms": 1213610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:50:00+08:00",
+        "duration_ms": 2053610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "24",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:19:00+08:00",
+        "duration_ms": 193610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:33:00+08:00",
+        "duration_ms": 1033610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:33:00+08:00",
+        "duration_ms": 1033610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:47:00+08:00",
+        "duration_ms": 1873610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "25",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:28:00+08:00",
+        "duration_ms": 733610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:43:00+08:00",
+        "duration_ms": 1633610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:43:00+08:00",
+        "duration_ms": 1633610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "next3": {
+        "time": "",
+        "duration_ms": null,
+        "lat": null,
+        "lng": null,
+        "load": "",
+        "feature": "",
+        "type": ""
+      }
+    },
+    {
+      "no": "261",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:17:00+08:00",
+        "duration_ms": 73610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:25:00+08:00",
+        "duration_ms": 553610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:25:00+08:00",
+        "duration_ms": 553610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:33:00+08:00",
+        "duration_ms": 1033610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "262",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:18:00+08:00",
+        "duration_ms": 133610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:32:00+08:00",
+        "duration_ms": 973610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:32:00+08:00",
+        "duration_ms": 973610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:47:00+08:00",
+        "duration_ms": 1873610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "265",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:16:27+08:00",
+        "duration_ms": 40610,
+        "lat": 1.3761788333333334,
+        "lng": 103.85006,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:17:57+08:00",
+        "duration_ms": 130610,
+        "lat": 1.3696234999999999,
+        "lng": 103.84195816666667,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:17:57+08:00",
+        "duration_ms": 130610,
+        "lat": 1.3696234999999999,
+        "lng": 103.84195816666667,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:30:46+08:00",
+        "duration_ms": 899610,
+        "lat": 1.3718008333333334,
+        "lng": 103.84824366666666,
+        "load": "SDA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "269",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:16:00+08:00",
+        "duration_ms": 13610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:27:00+08:00",
+        "duration_ms": 673610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:27:00+08:00",
+        "duration_ms": 673610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:38:00+08:00",
+        "duration_ms": 1333610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "269A",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:31:00+08:00",
+        "duration_ms": 913610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:42:00+08:00",
+        "duration_ms": 1573610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:42:00+08:00",
+        "duration_ms": 1573610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "",
+        "duration_ms": null,
+        "lat": null,
+        "lng": null,
+        "load": "",
+        "feature": "",
+        "type": ""
+      }
+    },
+    {
+      "no": "73",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:17:00+08:00",
+        "duration_ms": 73610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:27:00+08:00",
+        "duration_ms": 673610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:27:00+08:00",
+        "duration_ms": 673610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:37:00+08:00",
+        "duration_ms": 1273610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    },
+    {
+      "no": "86",
+      "operator": "SBST",
+      "next": {
+        "time": "2019-09-19T22:21:00+08:00",
+        "duration_ms": 313610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "DD"
+      },
+      "subsequent": {
+        "time": "2019-09-19T22:39:00+08:00",
+        "duration_ms": 1393610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next2": {
+        "time": "2019-09-19T22:39:00+08:00",
+        "duration_ms": 1393610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      },
+      "next3": {
+        "time": "2019-09-19T22:57:00+08:00",
+        "duration_ms": 2473610,
+        "lat": 0,
+        "lng": 0,
+        "load": "SEA",
+        "feature": "WAB",
+        "type": "SD"
+      }
+    }
+  ]
+}
