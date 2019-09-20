@@ -6,5 +6,5 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class BusTime {
 
     public String time;
-    public String duration_ms;
+    public long duration_ms;
 }
