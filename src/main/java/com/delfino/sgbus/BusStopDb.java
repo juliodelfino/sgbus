@@ -36,6 +36,8 @@ public class BusStopDb {
                 mapper.getTypeFactory().constructMapLikeType(Map.class, Integer.class, BusStop.class);
 
         busStopMap = mapper.readValue(in, type);
+        System.out.println(busStopMap.values().stream()
+            .max((b1, b2) -> Integer.compare(b1.name.length(), b2.name.length())).get().name);
         busStopMap.entrySet().forEach(e -> e.getValue().id = e.getKey());
     }
 
