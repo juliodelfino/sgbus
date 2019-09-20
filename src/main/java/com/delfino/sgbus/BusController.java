@@ -36,7 +36,9 @@ public class BusController extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
 
-        String stopId = req.getParameter("stopId");
+        String stopId = req.getParameter("id");
+
+        resp.setContentType("text/json");
 
         resp.getWriter().println(
             objectMapper.writeValueAsString(responses.get("buses_" + stopId + ".json")));
