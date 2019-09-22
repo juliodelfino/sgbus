@@ -25,9 +25,16 @@ public class LtaDataController extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
 
-        Map<String, List<Bus>> timingsMap = ApiParserUtil.getInstance().parseLtaData(new URL(url));
-        BusStopDb.getInstance().setBusTimes(timingsMap);
-        System.out.println("Done fetching from lta server");
+        for (int i=0; i<3; i++) {
+            Map<String, List<Bus>> timingsMap = ApiParserUtil.getInstance().parseLtaData(new URL(url));
+            BusStopDb.getInstance().setBusTimes(timingsMap);
+            System.out.println("Done fetching from lta server");
+            try {
+                Thread.sleep(17000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         resp.getWriter().println("Done");
     }
 }

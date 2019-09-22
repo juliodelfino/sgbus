@@ -1,18 +1,12 @@
 package com.delfino.sgbus;
 
-import com.delfino.sgbus.model.Bus;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.appengine.repackaged.com.google.common.collect.ImmutableMap;
+import org.apache.commons.lang3.tuple.Pair;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class BusController extends HttpServlet {
 
@@ -32,7 +26,7 @@ public class BusController extends HttpServlet {
 
         resp.getWriter().println(
             objectMapper.writeValueAsString(
-                    ImmutableMap.of("services",
+                    Pair.of("services",
                     busStopDb.getBusTimes(stopId))));
     }
 }

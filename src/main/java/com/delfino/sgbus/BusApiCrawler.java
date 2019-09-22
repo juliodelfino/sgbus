@@ -30,6 +30,7 @@ public class BusApiCrawler implements ServletContextListener {
             try {
                 Map<String, List<Bus>> timingsMap = parserUtil.parseLtaData(new URL(url));
                 BusStopDb.getInstance().setBusTimes(timingsMap);
+                System.out.println("Done fetching from lta server");
             } catch (IOException e) {
                 e.printStackTrace();
             }
