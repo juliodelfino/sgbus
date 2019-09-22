@@ -22,7 +22,6 @@ public class BusStopController extends HttpServlet {
 
         resp.setContentType("text/json");
 
-
         resp.getWriter().println(
             objectMapper.writeValueAsString(
                 busStopDb.getNearbyBusStops(latitude, longitude)));
