@@ -16,7 +16,6 @@ import java.util.stream.Stream;
 
 public class LtaDataController extends HttpServlet {
 
-    private ObjectMapper objectMapper = new ObjectMapper();
     private String url = "https://s3-ap-southeast-1.amazonaws.com/lta-eta-web-2/bus_arrival.baf3.js";
 
     public LtaDataController() {
@@ -27,9 +26,8 @@ public class LtaDataController extends HttpServlet {
             throws IOException {
 
         Map<String, List<Bus>> timingsMap = ApiParserUtil.getInstance().parseLtaData(new URL(url));
-        resp.setContentType("text/json");
-
-        resp.getWriter().println(
-            objectMapper.writeValueAsString(timingsMap));
+        BusStopDb.getInstance().setBusTimes(timingsMap);
+        System.out.println("Done fetching from lta server");
+        resp.getWriter().println("Done");
     }
 }
