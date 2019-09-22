@@ -2,6 +2,7 @@ package com.delfino.sgbus;
 
 import com.delfino.sgbus.graphdb.Edge;
 import com.delfino.sgbus.graphdb.Node;
+import com.delfino.sgbus.model.Bus;
 import com.delfino.sgbus.model.BusStop;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,9 +23,20 @@ public class BusStopDb {
 
     private Map<Integer, BusStop> busStopMap;
     private Map<Integer, Node<BusStop>> graphDb;
+    private Map<String, List<Bus>> busTimes;
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.#####");
     private int counter = 0;
+
+    private static BusStopDb instance;
+    public static BusStopDb getInstance() {
+        if (instance == null) {
+            instance = new BusStopDb();
+        }
+        return instance;
+    }
+
+    private BusStopDb() { }
 
     public void initializeDb() throws IOException {
 
@@ -56,6 +68,14 @@ public class BusStopDb {
     public Node getBusStopInfo(int stopId) {
 
         return graphDb.get(stopId);
+    }
+
+    public List<Bus> getBusTimes(String stopId) {
+        return busTimes.get(stopId);
+    }
+
+    public void setBusTimes(Map<String, List<Bus>> busTimes) {
+        this.busTimes = busTimes;
     }
 
     public void initializeGraphDb() {

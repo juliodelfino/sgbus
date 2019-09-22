@@ -1,5 +1,7 @@
 package com.delfino.sgbus;
 
+import com.delfino.sgbus.model.Bus;
+import com.delfino.sgbus.model.BusStop;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.http.HttpServlet;
@@ -9,7 +11,7 @@ import java.io.IOException;
 
 public class BusStopController extends HttpServlet {
 
-    private BusStopDb busStopDb = new BusStopDb();
+    private BusStopDb busStopDb = BusStopDb.getInstance();
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Override

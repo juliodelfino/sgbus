@@ -8,4 +8,16 @@ public class Bus {
     public BusTime next2;
     public BusTime next3;
     public BusTime subsequent;
+
+    @Override
+    public String toString() {
+        return "Bus{" +
+                "no='" + no + '\'' +
+                ", operator='" + operator + '\'' +
+                ", next=" + next +
+                ", next2=" + next2 +
+                ", next3=" + next3 +
+                ", subsequent=" + subsequent +
+                '}';
+    }
 }
