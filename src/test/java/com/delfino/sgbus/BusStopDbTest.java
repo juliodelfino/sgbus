@@ -69,8 +69,8 @@ public class BusStopDbTest {
 
         URL url = new URL("https://s3-ap-southeast-1.amazonaws.com/lta-eta-web-2/bus_arrival.baf3.js");
         Map<String, List<Bus>> timingsMap = util.parseLtaData(url);
-        System.out.println(timingsMap.get("01012").get(0));
-        System.out.println(timingsMap.get("14331").get(0));
+        System.out.println(timingsMap.get("01012"));
+        System.out.println(timingsMap.get("14331"));
     }
 
 
