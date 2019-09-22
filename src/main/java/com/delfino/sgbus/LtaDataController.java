@@ -32,7 +32,7 @@ public class LtaDataController extends HttpServlet {
             try {
                 Thread.sleep(17000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                throw new IOException(e.getMessage(), e);
             }
         }
         resp.getWriter().println("Done");
