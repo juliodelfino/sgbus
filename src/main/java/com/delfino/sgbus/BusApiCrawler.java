@@ -16,12 +16,11 @@ import java.util.concurrent.TimeUnit;
 public class BusApiCrawler implements ServletContextListener {
 
     private ScheduledExecutorService executor;
-    private URL url;
+    private String url = "https://s3-ap-southeast-1.amazonaws.com/lta-eta-web-2/bus_arrival.baf3.js";
     private ApiParserUtil parserUtil;
 
     public BusApiCrawler() throws IOException {
         parserUtil = ApiParserUtil.getInstance();
-        url = new URL("https://s3-ap-southeast-1.amazonaws.com/lta-eta-web-2/bus_arrival.baf3.js");
     }
 
     public void contextInitialized(ServletContextEvent event) {
@@ -29,7 +28,7 @@ public class BusApiCrawler implements ServletContextListener {
         Runnable task = () -> {
 
             try {
-                Map<String, List<Bus>> timingsMap = parserUtil.parseLtaData(url);
+                Map<String, List<Bus>> timingsMap = parserUtil.parseLtaData(new URL(url));
                 BusStopDb.getInstance().setBusTimes(timingsMap);
             } catch (IOException e) {
                 e.printStackTrace();
