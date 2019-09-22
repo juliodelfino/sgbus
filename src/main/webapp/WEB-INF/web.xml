@@ -20,6 +20,10 @@
         <servlet-name>busmixed</servlet-name>
         <servlet-class>com.delfino.sgbus.BusMixedController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ltadata</servlet-name>
+        <servlet-class>com.delfino.sgbus.LtaDataController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>home</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -35,6 +39,10 @@
     <servlet-mapping>
         <servlet-name>busmixed</servlet-name>
         <url-pattern>/busmixed</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ltadata</servlet-name>
+        <url-pattern>/ltadata</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

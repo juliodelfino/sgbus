@@ -1,7 +1,5 @@
 package com.delfino.sgbus;
 
-import com.delfino.sgbus.model.Bus;
-import com.delfino.sgbus.model.BusStop;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.http.HttpServlet;
