@@ -30,12 +30,13 @@ public class LtaDataController extends HttpServlet {
 
         if (action.equals("cron")) {
 
-            for (int i = 0; i < 3; i++) {
+            // 19000 ms + 1 second processing time x 15 loops = 5 mins approx.
+            for (int i = 0; i < 15; i++) {
                 Map<String, List<Bus>> timingsMap = ApiParserUtil.getInstance().parseLtaData(new URL(url));
                 BusStopDb.getInstance().setBusTimes(timingsMap);
                 System.out.println("Done fetching from lta server");
                 try {
-                    Thread.sleep(17000);
+                    Thread.sleep(19000);
                 } catch (InterruptedException e) {
                     throw new IOException(e.getMessage(), e);
                 }
