@@ -11,10 +11,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.DecimalFormat;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class BusStopDb {
@@ -23,7 +20,7 @@ public class BusStopDb {
 
     private Map<Integer, BusStop> busStopMap;
     private Map<Integer, Node<BusStop>> graphDb;
-    private Map<String, List<Bus>> busTimes;
+    private Map<String, List<Bus>> busTimes = new HashMap<>();
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.#####");
     private int counter = 0;
@@ -71,7 +68,7 @@ public class BusStopDb {
     }
 
     public List<Bus> getBusTimes(String stopId) {
-        return busTimes.get(stopId);
+        return busTimes.containsKey(stopId) ? busTimes.get(stopId) : new ArrayList();
     }
 
     public void setBusTimes(Map<String, List<Bus>> busTimes) {
