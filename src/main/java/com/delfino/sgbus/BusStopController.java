@@ -1,11 +1,14 @@
 package com.delfino.sgbus;
 
+import com.delfino.sgbus.model.BusStop2;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.stream.Collectors;
 
 public class BusStopController extends HttpServlet {
 
@@ -22,8 +25,14 @@ public class BusStopController extends HttpServlet {
 
         resp.setContentType("text/json");
 
+        Object response = null;
+        if (StringUtils.isEmpty(req.getParameter("minify"))) {
+            response = busStopDb.getNearbyBusStops(latitude, longitude);
+        } else {
+            response = busStopDb.getNearbyBusStops(latitude, longitude).stream()
+                    .map(BusStop2::convert).collect(Collectors.toList());
+        }
         resp.getWriter().println(
-            objectMapper.writeValueAsString(
-                busStopDb.getNearbyBusStops(latitude, longitude)));
+            objectMapper.writeValueAsString(response));
     }
 }

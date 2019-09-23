@@ -1,16 +1,17 @@
 package com.delfino.sgbus;
 
 import com.delfino.sgbus.model.Bus;
+import com.delfino.sgbus.model.Bus2;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.appengine.repackaged.com.google.common.collect.ImmutableMap;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class BusMixedController extends HttpServlet {
@@ -36,7 +37,12 @@ public class BusMixedController extends HttpServlet {
 
         resp.setContentType("text/json");
 
+
+        Object response = StringUtils.isEmpty(req.getParameter("minify")) ?
+                busTimingsMap : busTimingsMap.entrySet().stream()
+                    .collect(Collectors.toMap(e -> e.getKey(), e -> Bus2.convert(e.getValue())));
+
         resp.getWriter().println(
-            objectMapper.writeValueAsString(busTimingsMap));
+            objectMapper.writeValueAsString(response));
     }
 }

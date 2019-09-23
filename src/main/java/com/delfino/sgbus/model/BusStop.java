@@ -8,9 +8,9 @@ public class BusStop {
 
     public int id;
 
-    public double lat;
+    public Double lat;
 
-    public double lng;
+    public Double lng;
 
     public String name;
 
