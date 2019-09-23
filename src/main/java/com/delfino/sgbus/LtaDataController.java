@@ -36,7 +36,7 @@ public class LtaDataController extends HttpServlet {
                 BusStopDb.getInstance().setBusTimes(timingsMap);
                 System.out.println("Done fetching from lta server");
                 try {
-                    Thread.sleep(19000);
+                    Thread.sleep(18000);
                 } catch (InterruptedException e) {
                     throw new IOException(e.getMessage(), e);
                 }
